@@ -23,6 +23,7 @@ export default class App extends Component {
   }
 
   render() {
+
     return (
         <ImageBackground source={require('./assets/bg.jpg')} style={styles.chat}>
             <FlatList data={this.state.chat} renderItem={({item}) => <MsgItem data={item} />} />
